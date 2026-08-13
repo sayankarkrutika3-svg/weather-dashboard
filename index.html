@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WeatherNow | Weather Dashboard</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div id="weatherBackground">
+        <canvas id="rainCanvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="logo">
+            🌤 WeatherNow
+        </div>
+
+        <div class="nav-right">
+
+            <button id="locationBtn">
+                📍 Current Location
+            </button>
+
+        </div>
+
+    </nav>
+
+    <!-- Search -->
+    <section class="search-section">
+
+        <h1>Weather Dashboard</h1>
+
+        <p>Search any city around the world</p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter City Name">
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <!-- Left Side -->
+        <section class="current-weather">
+
+            <div class="weather-icon">
+                ☀️
+            </div>
+
+            <h2 id="cityName">
+                Nagpur
+            </h2>
+
+            <h1 id="temperature">
+                29°
+            </h1>
+
+            <p id="weatherDescription">
+                Clear Sky
+            </p>
+
+            <hr>
+
+            <div class="weather-details">
+
+                <div class="detail">
+
+                    <span>Feels Like</span>
+
+                    <strong id="wFeelsLikeMini">
+                        31°C
+                    </strong>
+
+                </div>
+
+                <div class="detail">
+
+                    <span>Humidity</span>
+
+                    <strong id="wHumidityMini">
+                        65%
+                    </strong>
+
+                </div>
+
+                <div class="detail">
+
+                    <span>Wind</span>
+
+                    <strong id="wWindMini">
+                        4.5 m/s
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Right Side -->
+
+        <section class="weather-info">
+
+            <!-- Hourly Forecast -->
+
+            <div class="card">
+
+                <h2>Hourly Forecast</h2>
+
+                <div id="hourlyForecast" class="hourly-forecast">
+
+                </div>
+
+            </div>
+
+            <!-- Highlights -->
+
+            <div class="card">
+
+                <h2>Today's Highlights</h2>
+
+                <div class="highlights">
+
+                    <div class="highlight-card">
+
+                        <h3>UV Index</h3>
+
+                        <p id="wUVHL">0</p>
+
+                    </div>
+
+                    <div class="highlight-card">
+
+                        <h3>Pressure</h3>
+
+                        <p id="wPressureHL">0 hPa</p>
+
+                    </div>
+
+                    <div class="highlight-card">
+
+                        <h3>Visibility</h3>
+
+                        <p id="wVisibilityHL">0 km</p>
+
+                    </div>
+
+                    <div class="highlight-card">
+
+                        <h3>Cloud Cover</h3>
+
+                        <p id="wCloudCoverHL">0%</p>
+
+                    </div>
+
+                    <div class="highlight-card">
+
+                        <h3>Sunrise</h3>
+
+                        <p id="wSunrise">--:--</p>
+
+                    </div>
+
+                    <div class="highlight-card">
+
+                        <h3>Sunset</h3>
+
+                        <p id="wSunset">--:--</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Temperature Chart -->
+
+            <div class="card">
+
+                <h2>Temperature Trend</h2>
+
+                <canvas id="tempChart"></canvas>
+
+            </div>
+
+            <!-- 7 Day Forecast -->
+
+            <div class="card">
+
+                <h2>5-Day Forecast</h2>
+
+                <div id="dailyForecast">
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+
+        Developed by Krutika &hearts;
+
+    </footer>
+
+    <!-- Chart.js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
