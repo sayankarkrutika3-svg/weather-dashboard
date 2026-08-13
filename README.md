@@ -53,10 +53,7 @@ The main objective of WeatherNow is to provide users with quick and easy access 
 
 📸 Project Preview
 <img width="1358" height="685" alt="Screenshot 2026-08-03 195907" src="https://github.com/user-attachments/assets/7752f861-7ea5-4ff9-8b19-b8338c22e61d" />
-
-<img width="1337" height="685" alt="Screenshot 2026-08-03 200959" src="https://github.com/user-attachments/assets/adab5055-f2f3-45b3-b808-e5f75bcb24ef" />
 <img width="1342" height="684" alt="image" src="https://github.com/user-attachments/assets/cf3e6f0a-23e7-4a1d-a424-01120d5f4d47" />
-<img width="1331" height="671" alt="image" src="https://github.com/user-attachments/assets/9b7d081d-d9fc-4800-8bad-f5add54f750b" />
 
 👩‍💻 Developer
 Krutika Sayankar
